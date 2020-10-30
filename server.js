@@ -7,7 +7,7 @@ app.use(methodOverride('_method'));
 
 
 app.use(express.urlencoded({ extended: true }));
-app.use("/", require("./controllers/pokemonController.js"));
+app.use("/pokemon", require("./controllers/pokemonController.js"));
 app.use("/players", require("./controllers/playersController.js"));
 
 
